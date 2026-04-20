@@ -1,18 +1,13 @@
 class Fafind < Formula
   desc "Fast parallel filesystem search by filename"
   homepage "https://github.com/rywils/fafind"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
-    on_intel do
-      url "https://github.com/rywils/fafind/releases/download/v#{version}/fafind-macos-x86_64-v#{version}.tar.gz"
-      sha256 "215c2df984c5744e4331dbc5f96323a970d3cea27852126530702a576b085b21"
-    end
-
     on_arm do
       url "https://github.com/rywils/fafind/releases/download/v#{version}/fafind-macos-arm64-v#{version}.tar.gz"
-      sha256 "0ad10e59911d3059cc5dfaf2da218adb945740d840617810008971f00f4c2ada"
+      sha256 "6f295906aa51ae21de43473dc63a1017b77aa9421ce966331ff66d17e8543842"
     end
   end
 
